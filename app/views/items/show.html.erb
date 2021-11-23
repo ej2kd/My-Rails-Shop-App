@@ -6,6 +6,13 @@
 </p>
 
 <p>
+  <strong>Image:</strong>
+  <% if @item.item_image.attached? %>
+    <%= image_tag @item.item_image, width: "200px" %>
+  <% end %>
+</p>
+
+<p>
   <strong>Price:</strong>
   <%= @item.price %>
 </p>
