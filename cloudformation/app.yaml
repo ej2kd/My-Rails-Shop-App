@@ -221,7 +221,7 @@ Resources:
       AllocatedStorage: 20
       DBInstanceClass: db.t2.micro
       DBInstanceIdentifier: rails-app-db
-      DBName: rails_app_db
+      DBName: !Ref DBName
       VPCSecurityGroups:
         - !Ref RdsSecurityByEC2SecurityGroup
       DBSubnetGroupName: !Ref RdsSubnetGroup
